@@ -1,0 +1,35 @@
+<html>
+    <body>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+            <!-- Compiled and minified JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+            <br><br>
+            <table>
+                <thead>
+                    <th>ifsc</th>
+                    <th>Bank id</th>
+                    <th>Branch</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>District</th>
+                    <th>State</th>
+                    <th>Bank Name</th>
+                </thead>
+                <tbody>
+                    {% for obj in allDetail %}
+                    <tr>
+                        <td>{{ obj.ifsc }}</td>
+                        <td>{{ obj.bank_id }}</td>
+                        <td>{{ obj.branch }}</td>
+                        <td>{{ obj.address }}</td>
+                        <td>{{ obj.city }}</td>
+                        <td>{{ obj.district }}</td>
+                        <td>{{ obj.state }}</td>
+                        <td>{{ obj.bank_name }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    </body>
+</html>

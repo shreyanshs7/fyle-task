@@ -25,7 +25,7 @@ SECRET_KEY = '6dpi)eoj@ex!^m7=ro#d&@)p5q%@uriu3kc&lp7qry@&jen#36'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fyle-task.herokuapp.com']
+ALLOWED_HOSTS = ['fyle-task.herokuapp.com','127.0.0.1']
 
 
 # Application definition

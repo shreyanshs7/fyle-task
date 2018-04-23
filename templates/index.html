@@ -14,6 +14,15 @@
                     Enter IFSC code : <input type="text" name="ifsc">
                     <br><br>
                 <button type="submit" class="btn">Get branch details</button>
+                <br><br>
+                <b>Example input :</b> ZSBL0000331
+                <br><br>
+                <b>Curl command :</b> curl -X POST \
+  https://fyle-task.herokuapp.com/branchdetail/ \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'postman-token: 2b5e8be6-d79d-d6a0-6478-07cc15dab21c' \
+  -d ifsc=ZSBL0000331
                 </form>
                 <br><br>
                 <hr>
@@ -26,8 +35,20 @@
                     <br><br>
                     <button type="submit" class="btn">Get all branch</button>
                 </form>
+                <b>Example input :</b>
+                <br>
+                <b>City : </b>MUMBAI
+                <br>
+                <b>Bank name :</b> THE ZOROASTRIAN COOPERATIVE BANK LIMITED 
+                <br><br>
+                <b>Curl command : </b> curl -X POST \
+  https://fyle-task.herokuapp.com/getallbranch/ \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'postman-token: 9bfcdae2-10d1-4964-4895-901033ca42de' \
+  -d 'city=MUMBAI&bank=THE%20ZOROASTRIAN%20COOPERATIVE%20BANK%20LIMITED'
         </div>
-        
+        <br><br>
         
     </body>
 </html>
